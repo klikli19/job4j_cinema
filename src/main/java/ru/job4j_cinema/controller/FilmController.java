@@ -22,7 +22,7 @@ public class FilmController {
     public String getAllFilms(Model model) {
         model.addAttribute("film",
                 filmService.findAll());
-        return "list";
+        return "films/list";
     }
 
     @GetMapping("/{id}")
@@ -30,7 +30,7 @@ public class FilmController {
                                   @PathVariable int id) {
         var foundFilm = filmService.findById(id);
 
-        if (foundFilm ==  null) {
+        if (foundFilm == null) {
             model.addAttribute("message",
                     "Фильм отсутствует");
             return "errors/404";
@@ -38,6 +38,6 @@ public class FilmController {
 
         model.addAttribute("filmdto", foundFilm);
 
-        return "one";
+        return "films/one";
     }
 }
