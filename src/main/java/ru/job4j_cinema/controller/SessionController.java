@@ -34,7 +34,7 @@ public class SessionController {
     }
 
     @GetMapping
-    String getAll(Model model) {
+    public String getAll(Model model) {
 
         model.addAttribute("sessiondtos",
                 sessionService.getAllSessions());

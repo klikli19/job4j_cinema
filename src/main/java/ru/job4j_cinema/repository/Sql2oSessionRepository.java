@@ -9,11 +9,11 @@ import ru.job4j_cinema.model.Session;
 import java.util.Collection;
 
 @Repository
-public class Sql2OSessionRepository implements SessionRepository {
+public class Sql2oSessionRepository implements SessionRepository {
 
     private final Sql2o sql2o;
 
-    public Sql2OSessionRepository(Sql2o sql2o) {
+    public Sql2oSessionRepository(Sql2o sql2o) {
         this.sql2o = sql2o;
     }
 
