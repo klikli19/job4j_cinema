@@ -40,7 +40,7 @@ public class Sql2oHallRepository implements HallRepository {
                             SELECT * FROM halls
                             WHERE id =
                             (SELECT halls_id
-                            FROM film_sessions WHERE "id" = :id)
+                            FROM sessions WHERE "id" = :id)
                             """);
 
             query.addParameter("id", id);

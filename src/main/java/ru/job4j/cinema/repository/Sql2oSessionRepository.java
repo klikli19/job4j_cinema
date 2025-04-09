@@ -89,7 +89,7 @@ public class Sql2oSessionRepository implements SessionRepository {
     public Session save(Session session) {
         try (var connection = sql2o.open()) {
             var sql = """
-                    INSERT INTO film_sessions
+                    INSERT INTO sessions
                     (film_id,
                     halls_id,
                     start_time,
