@@ -1,8 +1,8 @@
-package ru.job4j.cinema.service;
+package ru.job4j.cinema.repository.hall;
 
 import ru.job4j.cinema.model.Hall;
 
-public interface HallService {
+public interface HallRepository {
 
     Hall getHallById(int id);
 

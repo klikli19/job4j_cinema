@@ -1,9 +1,8 @@
-package ru.job4j.cinema.service.impl;
+package ru.job4j.cinema.service.ticket;
 
 import org.springframework.stereotype.Service;
 import ru.job4j.cinema.model.Ticket;
-import ru.job4j.cinema.repository.TicketRepository;
-import ru.job4j.cinema.service.TicketService;
+import ru.job4j.cinema.repository.ticket.TicketRepository;
 
 import java.util.Optional;
 

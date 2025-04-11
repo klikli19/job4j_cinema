@@ -1,9 +1,8 @@
-package ru.job4j.cinema.service.impl;
+package ru.job4j.cinema.service.hall;
 
 import org.springframework.stereotype.Service;
 import ru.job4j.cinema.model.Hall;
-import ru.job4j.cinema.repository.HallRepository;
-import ru.job4j.cinema.service.HallService;
+import ru.job4j.cinema.repository.hall.HallRepository;
 
 @Service
 public class SimpleHallService implements HallService {

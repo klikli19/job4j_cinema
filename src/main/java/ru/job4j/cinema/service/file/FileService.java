@@ -1,4 +1,4 @@
-package ru.job4j.cinema.service;
+package ru.job4j.cinema.service.file;
 
 import ru.job4j.cinema.model.File;
 import ru.job4j.cinema.dto.FileDto;

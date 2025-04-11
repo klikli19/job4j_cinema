@@ -7,7 +7,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.ui.ConcurrentModel;
 import ru.job4j.cinema.model.Ticket;
-import ru.job4j.cinema.service.TicketService;
+import ru.job4j.cinema.service.ticket.TicketService;
 
 import java.util.Optional;
 

@@ -8,6 +8,10 @@ import ru.job4j.cinema.model.Film;
 import ru.job4j.cinema.model.Session;
 import ru.job4j.cinema.model.Ticket;
 import ru.job4j.cinema.model.User;
+import ru.job4j.cinema.repository.film.Sql2oFilmRepository;
+import ru.job4j.cinema.repository.session.Sql2oSessionRepository;
+import ru.job4j.cinema.repository.ticket.Sql2oTicketRepository;
+import ru.job4j.cinema.repository.user.Sql2oUserRepository;
 
 import java.time.LocalDateTime;
 import java.util.Properties;

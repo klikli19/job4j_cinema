@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.job4j.cinema.model.Ticket;
-import ru.job4j.cinema.service.TicketService;
+import ru.job4j.cinema.service.ticket.TicketService;
 
 @Controller
 @RequestMapping("/tickets")
@@ -27,7 +27,7 @@ public class TicketController {
 
         if (savedTicket.isEmpty()) {
             model.addAttribute("message", "Не удалось. Попробуйте заново");
-            return "errors/404";
+            return "errors/409";
         }
 
         return "tickets/one";

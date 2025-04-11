@@ -5,12 +5,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.ui.ConcurrentModel;
-import ru.job4j.cinema.model.Hall;
-import ru.job4j.cinema.service.FilmService;
-import ru.job4j.cinema.service.HallService;
-import ru.job4j.cinema.service.SessionService;
+import ru.job4j.cinema.service.film.FilmService;
+import ru.job4j.cinema.service.hall.HallService;
+import ru.job4j.cinema.service.session.SessionService;
 import ru.job4j.cinema.dto.SessionDto;
 
 import java.time.LocalDateTime;
